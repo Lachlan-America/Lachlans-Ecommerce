@@ -10,9 +10,11 @@
     "test": "jest"
   },
   "dependencies": {
+    "eslint-import-resolver-typescript": "^4.4.4",
     "next": "15.3.5",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "tinyglobby": "^0.2.14"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -32,5 +34,8 @@
     "tailwindcss": "^4",
     "ts-node": "^10.9.2",
     "typescript": "^5"
+  },
+  "overrides": {
+    "picomatch": "4.0.2"
   }
 }
