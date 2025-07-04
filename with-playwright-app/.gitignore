@@ -11,7 +11,11 @@
 !.yarn/versions
 
 # testing
+/blob-report/
 /coverage
+/playwright/.cache/
+/playwright-report/
+/test-results/
 
 # next.js
 /.next/
@@ -28,10 +32,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# local env files
+.env*.local
 
 # vercel
 .vercel
@@ -39,10 +42,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-# Playwright
-node_modules/
-/test-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
