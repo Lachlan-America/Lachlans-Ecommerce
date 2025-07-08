@@ -1,8 +1,6 @@
 'use client'
-import { ProductType, getProducts } from "@/app/common/ProductUtils";
+import { ProductType } from "@/app/common/ProductUtils";
 import Image from 'next/image';
-
-const MAX_LENGTH = 80
 
 export default function Card({ item }: { item: ProductType }){
     return (

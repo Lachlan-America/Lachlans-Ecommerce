@@ -1,8 +1,6 @@
-import Image from "next/image";
-import Card from "../components/Card";
 import Products from "../components/Products";
 import { Suspense } from "react";
-import { ProductType, getProducts } from "@/app/common/ProductUtils";
+import { getProducts } from "@/app/common/ProductUtils";
 
 export default function Shorts() {
   const products = getProducts();
