@@ -1,0 +1,18 @@
+import Image from "next/image";
+import Card from "../components/Card";
+import Products from "../components/Products";
+import { Suspense } from "react";
+import { ProductType, getProducts } from "@/app/common/ProductUtils";
+
+export default function Shorts() {
+  const products = getProducts();
+
+  return (
+    <>
+      <h1 className="text-[50px] text-black font-bold pb-5">Shirts</h1>
+      <Suspense fallback={<div className="text-black text-xl">Loading...</div>}>
+        <Products products={products} category="short"/>
+      </Suspense>
+    </>
+  );
+}
