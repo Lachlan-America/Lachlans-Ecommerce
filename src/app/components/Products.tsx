@@ -1,7 +1,7 @@
 'use client'
 import { use } from 'react';
 import Card from './Card';
-import { ProductType, getProducts } from "@/app/common/ProductUtils";
+import { ProductType } from "@/app/common/ProductUtils";
 
 export default function Products({ products, category }: { products: Promise<ProductType[]>, category: string}) {
   const allProducts = use(products).filter(product => product.description.toLowerCase().includes(category))
