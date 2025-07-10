@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { CartProvider } from "./context/CartContext";
+import Header from "@/app/components/Header";
+import Footer from "@/app/components/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -10,7 +13,15 @@ export default function RootLayout({ children, }: Readonly<{children: React.Reac
   return (
     <html lang="en">
       <body>
-        {children}
+          <div className="min-h-screen min-w-screen flex items-center justify-center">
+            <div className="min-w-screen text-center">
+                <CartProvider>
+                  <Header />
+                    {children}
+                  <Footer />
+                </CartProvider>
+            </div>
+          </div>
       </body>
     </html>
   );
