@@ -12,47 +12,7 @@ export default function RootLayout({ children, }: Readonly<{children: React.Reac
   return (
     <html lang="en">
       <body>
-        <div className="grid grid-rows-[auto_1fr_auto] min-h-screen">
-          <header className="w-full">
-            <NavBar />
-          </header>
-          <main className="flex flex-col w-[80%] items-center justify-items-center bg-gray-300 mx-auto">
-            {children}
-          </main>
-          <footer className="row-start-3 w-[80%] py-4 flex flex-wrap items-center justify-center border-t-2 border-gray-500 mx-auto">
-            <a
-              className="flex items-center gap-2 hover:underline hover:underline-offset-4 mr-10 border-r-2 px-10 border-gray-500"
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Copyright © 2025 Lachlan America
-            </a>
-            <div className="flex flex-row gap-2">
-              <Image
-                src="/facebook.svg"
-                alt="Logo"
-                width={32}
-                height={32}
-                className="invert"
-              />
-              <Image
-                src="/instagram.svg"
-                alt="Logo"
-                width={36}
-                height={36}
-                className="invert"
-              />
-              <Image
-                src="/linkedin.svg"
-                alt="Logo"
-                width={38}
-                height={38}
-                className="invert"
-              />
-            </div>
-          </footer>
-        </div>
+        {children}
       </body>
     </html>
   );

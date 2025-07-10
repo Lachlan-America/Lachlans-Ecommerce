@@ -1,10 +1,20 @@
+import { CartProvider } from "./context/CartContext";
+import Header from "@/app/components/Header";
+import Hero from "@/app/components/Hero";
+import ProductGrid from "@/app/components/ProductGrid";
+import Footer from "@/app/components/Footer";
+
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center w-full h-full bg-no-repeat bg-cover bg-[url(/background.jpg)]">
-      <section className="text-center">
-        <h1 className="text-[50px] font-bold backdrop-blur-xs rounded-xl p-4">Welcome to Lachlan’s Store</h1>
-        <button className="bg-white p-4 mt-5 rounded-xl text-black font-bold">SHOP NOW</button>
-      </section>
+    <div className="min-h-screen min-w-screen flex items-center justify-center">
+      <div className="min-w-screen text-center">
+          <CartProvider>
+            <Header />
+            <Hero />
+            <ProductGrid />
+            <Footer />
+          </CartProvider>
+      </div>
     </div>
   );
 }
