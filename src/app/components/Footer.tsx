@@ -1,6 +1,4 @@
-
 import { Facebook, Twitter, Instagram, Mail, Phone, MapPin } from 'lucide-react';
-import Link from 'next/link';
 import FooterList from './FooterList';
 
 export interface LinkType {
