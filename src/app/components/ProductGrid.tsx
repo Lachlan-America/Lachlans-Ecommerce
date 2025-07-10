@@ -111,7 +111,7 @@ const ProductGrid = () => {
                 image: item.images?.[0] || '',
                 description: item.description,
                 category: item.category.name,
-                rating: Math.round(5*Math.random()),
+                rating: Math.round(5*Math.random() * 2) / 2,
                 inStock: item.id <= 40,
             })).filter((item: Product) => item.id <= 50);
 

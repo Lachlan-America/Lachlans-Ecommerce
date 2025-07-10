@@ -37,7 +37,7 @@ export default function ProductCard ({ product }: ProductCardProps) {
         if (hasHalfStar) {
             stars.push(<Star key="half" className="h-4 w-4 fill-yellow-400/50 text-yellow-400" />);
         }
-
+        
         const emptyStars = 5 - Math.ceil(rating);
         for (let i = 0; i < emptyStars; i++) {
             stars.push(<Star key={`empty-${i}`} className="h-4 w-4 text-gray-300" />);
@@ -101,14 +101,12 @@ export default function ProductCard ({ product }: ProductCardProps) {
                 )}
 
                 {/* Rating */}
-                {product.rating && (
-                    <div className="flex items-center gap-2 mb-3">
-                        <div className="flex">
-                            {renderStars(product.rating)}
-                        </div>
-                        <span className="text-sm text-gray-500">({product.rating})</span>
+                <div className="flex items-center gap-2 mb-3">
+                    <div className="flex">
+                        {renderStars(product.rating)}
                     </div>
-                )}
+                    <span className="text-sm text-gray-500">({product.rating})</span>
+                </div>
 
                 {/* Price and Add to Cart */}
                 <div className="flex items-center justify-between">
