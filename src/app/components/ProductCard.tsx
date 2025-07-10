@@ -4,6 +4,7 @@ import { Star, ShoppingCart, Heart } from 'lucide-react';
 import { Product, useCart } from '@/app/context/CartContext';
 import { useState } from 'react';
 import { toast } from "sonner"
+import Image from 'next/image';
 
 interface ProductCardProps {
   product: Product;
@@ -48,7 +49,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
     <div className="bg-white rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group">
       {/* Product Image */}
       <div className="relative overflow-hidden">
-        <img
+        <Image
           src={product.image}
           alt={product.name}
           className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"

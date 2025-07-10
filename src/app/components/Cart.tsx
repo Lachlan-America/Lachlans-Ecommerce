@@ -1,6 +1,7 @@
 
 import { X, Plus, Minus, ShoppingBag } from 'lucide-react';
 import { useCart } from "@/app/context/CartContext";
+import Image from 'next/image';
 
 interface CartProps {
   isOpen: boolean;
@@ -51,7 +52,7 @@ const Cart = ({ isOpen, onClose }: CartProps) => {
               <div className="space-y-4">
                 {cartItems.map((item) => (
                   <div key={item.id} className="flex items-center space-x-4 p-4 border rounded-lg">
-                    <img
+                    <Image
                       src={item.image}
                       alt={item.name}
                       className="w-16 h-16 object-cover rounded-lg"

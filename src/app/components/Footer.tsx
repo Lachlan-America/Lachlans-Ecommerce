@@ -32,7 +32,7 @@ const Footer = () => {
             <h3 className="text-2xl font-bold text-blue-400 mb-4">ShopHub</h3>
             <p className="text-gray-300 mb-6 max-w-md">
               Your one-stop destination for quality products at amazing prices. 
-              We're committed to providing exceptional shopping experiences.
+              We&apos;re committed to providing exceptional shopping experiences.
             </p>
             <div className="space-y-2">
               <div className="flex items-center space-x-3 text-gray-300">
