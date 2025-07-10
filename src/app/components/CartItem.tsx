@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { CartProduct  } from "@/app/context/CartContext";
-import { X, Plus, Minus, ShoppingBag } from 'lucide-react';
+import { X, Plus, Minus } from 'lucide-react';
 
 type CartcartItemProps = {
     cartItem: CartProduct;

@@ -25,7 +25,7 @@ export default function Header() {
                     <div className="flex items-center justify-between h-16">
                         {/* Logo */}
                         <div className="flex-shrink-0">
-                            <h1 className="text-2xl font-bold text-blue-600 mr-5">L'sCommerce</h1>
+                            <h1 className="text-2xl font-bold text-blue-600 mr-5">L&apos;sCommerce</h1>
                         </div>
 
                         {/* Desktop Navigation */}
