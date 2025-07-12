@@ -1,9 +1,10 @@
 'use client'
 import { useState } from 'react';
-import { Search, ShoppingCart, User, Menu, X } from 'lucide-react';
+import { Search, ShoppingCart, Menu, X } from 'lucide-react';
 import { useCart } from '@/app/context/CartContext';
 import Cart from './Cart';
 import Link from 'next/link';
+import ProfileIcon from './ProfileIcon';
 
 export default function Header() {
     const [isCartOpen, setIsCartOpen] = useState(false);
@@ -49,9 +50,7 @@ export default function Header() {
 
                         {/* Right Icons */}
                         <div className="flex items-center space-x-4">
-                            <button className="p-2 text-gray-700 hover:text-blue-600 transition-colors">
-                                <User className="h-6 w-6" />
-                            </button>
+                            <ProfileIcon />
 
                             <button onClick={() => setIsCartOpen(true)} className="p-2 text-gray-700 hover:text-blue-600 transition-colors relative" >
                                 <ShoppingCart className="h-6 w-6" />

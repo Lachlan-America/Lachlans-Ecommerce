@@ -113,7 +113,7 @@ const ProductGrid = () => {
                 category: item.category.name,
                 rating: Math.round(5*Math.random() * 2) / 2,
                 inStock: item.id <= 40,
-            })).filter((item: Product) => item.id <= 50);
+            })).filter((item: Product) => item.id <= 50 && item.id > 5);
 
             setProducts(products)
             setLoading(false);

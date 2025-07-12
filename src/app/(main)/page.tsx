@@ -2,12 +2,12 @@ import Hero from "@/app/components/Hero";
 import ProductGrid from "@/app/components/ProductGrid";
 import { Toaster } from "@/components/ui/sonner";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="min-h-screen">
+    <>
       <Hero />
       <ProductGrid />
       <Toaster />
-    </div>
+    </>
   );
 }
