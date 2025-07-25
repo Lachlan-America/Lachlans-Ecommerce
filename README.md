@@ -4,7 +4,7 @@ A minimal e-commerce web app built with Next.js, powered by Platzi Fake Store AP
 ## 🚀 Features
 + Product listing with categories
 + Cart functionality with quantity adjustment & removal
-+ Responsive (if it is — if not, say “desktop-first MVP”)
++ Responsive
 + Integrated with FakeStore API (or whichever API you used)
 + Uses AI-assisted component scaffolding for speed
 
